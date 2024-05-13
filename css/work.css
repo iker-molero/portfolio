@@ -1,0 +1,43 @@
+.work {
+
+    width: 100%;
+    height: fit-content;
+    padding: 0px 20px;
+
+    .timeline {
+
+        width: 100%;
+        height: fit-content;
+        margin-top: 10px;
+        box-sizing: border-box;
+        border-left: 3px solid #ffffff;
+        padding-left: 25px;
+
+        .job {
+
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 50px;
+
+            .bubble {
+
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                box-sizing: border-box;
+                border: 3px solid #ffffff;
+                background-color: #000000;
+                position: absolute;
+                top: 5px;
+                left: -42px;
+
+            }
+
+        }
+
+    }
+
+}

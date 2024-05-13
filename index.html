@@ -8,6 +8,7 @@
     <!--? [ CSS REFERENCES ] -->
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/work.css">
 
 </head>
 <body ng-app="portfolio" ng-controller="portfolio_controller">
@@ -36,6 +37,23 @@
 
         <!--? Work experience section -->
         <div class="work">
+
+            <!--? Title -->
+            <p1>Work experience</p1>
+
+            <!--? Timelline -->
+            <div class="timeline">
+
+                <div class="job" ng-repeat="job in jobs">
+
+                    <p>{{ job.start }} - {{ job.end }}</p>
+                    <p2>{{ job.company }} - {{ job.role }}</p2>
+                    <p>{{ job.description }}</p>
+                    <div class="bubble"></div>
+
+                </div>
+
+            </div>
 
         </div>
 
