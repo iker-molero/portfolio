@@ -1,6 +1,6 @@
 .work {
 
-    width: 100%;
+    width: calc(100% - 40px);
     height: fit-content;
     padding: 0px 20px;
     margin-bottom: 250px;
