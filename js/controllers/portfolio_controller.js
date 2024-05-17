@@ -3,8 +3,7 @@ portfolio_controller = function($scope) {
     //? [ VARIABLES ]
 
     $scope.jobs = jobs;
-    $scope.test = true;
-    $scope.test2 = true;
+    $scope.projects = projects;
 
 };
 

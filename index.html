@@ -19,21 +19,31 @@
 
         <!--? About me section -->
         <div class="about">
+
             <div class="glow_wrapper">
+
                 <div class="orange_glow"></div>
                 <div class="purple_glow"></div>
+                
             </div>
+
             <div class="about_info">
+
                 <p>I'm <p1>Iker Muñoz Molero</p1></p>
                 <p><p2>Full-Stack</p2> Software Developer, based in Spain. With <p2>1+ years</p2> of experience.</p>
                 <div class="links_wrapper">
+
                     <button class="btn">GitHub</button>
                     <button class="btn">Contact Me</button>
+
                 </div>
+
             </div>
+
             <!--TODO No sure about the arrow -->
             <!-- <div class="continue_arrow">
             </div> -->
+
         </div>
 
         <!--? Work experience section -->
@@ -64,23 +74,34 @@
             <!--? Title -->
             <p1>My Projects</p1>
 
-            <div class="project">
-                <img src="" class="image">
-                <div class="description">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos saepe, eos animi deleniti excepturi autem facilis eaque omnis alias enim quam sint iusto tenetur accusantium tempore illo quia? Sed, facilis.
-                    </p>
+            <div class="project" ng-repeat="project in projects">
+
+                <img src="{{ project.image }}" class="image" draggable="false">
+                <div class="name">
+
+                    <p2>{{ project.name }}</p2>
+
                 </div>
+
+                <div class="description">
+
+                    <p>{{ project.description }}</p>
+
+                </div>
+
                 <div class="info">
+
                     <div class="stack">
-                        <div class="language"></div>
-                        <div class="language"></div>
-                        <div class="language"></div>
+
+                        <img ng-repeat="language in project.stack" src="{{ language.stack_icon }}" class="language" ng-class="language.stack_color"></img>
+
                     </div>
                     <div class="links">
-                        <div class="link"></div>
-                        <div class="link"></div>
+
+                        <img ng-repeat="link in project.links" src="{{ language.link_icon }}" class="link"></img>
+
                     </div>
+
                 </div>
             </div>
 
@@ -100,3 +121,4 @@
 
 <!--? [ JSON REFERENCES ] -->
 <script src="js/jsons/jobs.js"></script>
+<script src="js/jsons/projects.js"></script>

@@ -3,7 +3,7 @@
     width: calc(100% - 40px);
     height: fit-content;
     padding: 0px 20px;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 
     .timeline {
 
@@ -32,7 +32,6 @@
                 border: 3px solid #ffffff;
                 background-color: #000000;
                 position: absolute;
-                top: 5px;
                 left: -42px;
 
             }
