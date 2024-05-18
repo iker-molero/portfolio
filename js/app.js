@@ -1,1 +1,1 @@
-const app = angular.module("portfolio", []);
+const app = angular.module("portfolio", ["ui.router"]);

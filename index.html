@@ -5,120 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iker Muñoz - Portfolio</title>
 
+    <!--? [ CSS EXTERNAL LIBRARIES REFERENCES ] -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
     <!--? [ CSS REFERENCES ] -->
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/work.css">
-    <link rel="stylesheet" href="css/projects.css">
 
 </head>
 <body ng-app="portfolio" ng-controller="portfolio_controller">
-    
-    <!--? Main page wrapper -->
-    <div class="content_wrapper">
 
-        <!--? About me section -->
-        <div class="about">
+    <!--? Navbar -->
+    <div class="navbar">
+        
+        <div class="light" ng-style="{ 'left': (5 + (70 * selected_state_index)) + 'px' }"></div>
 
-            <div class="glow_wrapper">
-
-                <div class="orange_glow"></div>
-                <div class="purple_glow"></div>
-                
-            </div>
-
-            <div class="about_info">
-
-                <p>I'm <p1>Iker Muñoz Molero</p1></p>
-                <p><p2>Full-Stack</p2> Software Developer, based in Spain. With <p2>1+ years</p2> of experience.</p>
-                <div class="links_wrapper">
-
-                    <button class="btn">GitHub</button>
-                    <button class="btn">Contact Me</button>
-
-                </div>
-
-            </div>
-
-            <!--TODO No sure about the arrow -->
-            <!-- <div class="continue_arrow">
-            </div> -->
-
+        <div class="icon_wrapper" ng-repeat="state in states" ng-click="change_state(state.name)">
+            <i class="fa" ng-class="state.icon" ng-style="selected_state_index == $index ? { 'color': '#FF5D01', 'font-size': '38px' } : {}"></i>
         </div>
 
-        <!--? Work experience section -->
-        <div class="work">
-
-            <!--? Title -->
-            <p1>Work experience</p1>
-
-            <!--? Timelline -->
-            <div class="timeline">
-
-                <div class="job" ng-repeat="job in jobs">
-
-                    <p>{{ job.start }} - {{ job.end }}</p>
-                    <p2>{{ job.company }} - {{ job.role }}</p2>
-                    <p>{{ job.description }}</p>
-                    <div class="bubble"></div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!--? Work experience section -->
-        <div class="projects">
-
-            <!--? Title -->
-            <p1>My Projects</p1>
-
-            <div class="project" ng-repeat="project in projects">
-
-                <img src="{{ project.image }}" class="image" draggable="false">
-                <div class="name">
-
-                    <p2>{{ project.name }}</p2>
-
-                </div>
-
-                <div class="description">
-
-                    <p>{{ project.description }}</p>
-
-                </div>
-
-                <div class="info">
-
-                    <div class="stack">
-
-                        <img ng-repeat="language in project.stack" src="{{ language.stack_icon }}" class="language" ng-class="language.stack_color"></img>
-
-                    </div>
-                    <div class="links">
-
-                        <img ng-repeat="link in project.links" src="{{ language.link_icon }}" class="link"></img>
-
-                    </div>
-
-                </div>
-            </div>
-
+        <div class="icon_wrapper">
+            <i class="fa-brands fa-github"></i>
         </div>
 
     </div>
 
+    <div ui-view></div>
+
 </body>
 </html>
 
-<!--? [ EXTERNAL LIBRARIES REFERENCES ] -->
+<!--? [ JS EXTERNAL LIBRARIES REFERENCES ] -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.1.0/angular-ui-router.min.js"></script>
 
 <!--? [ JS REFERENCES ] -->
 <script src="js/app.js"></script>
+<script src="js/config.js"></script>
 <script src="js/controllers/portfolio_controller.js"></script>
-
-<!--? [ JSON REFERENCES ] -->
-<script src="js/jsons/jobs.js"></script>
-<script src="js/jsons/projects.js"></script>
