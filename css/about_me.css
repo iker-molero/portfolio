@@ -1,0 +1,129 @@
+.about_me_wrapper {
+
+    width: 100vw;
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about_me {
+
+        width: 1200px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+
+        .description {
+
+            flex-grow: 1;
+            max-width: 600px;
+            height: 400px;
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+        }
+
+        .icon {
+
+            flex-grow: 1;
+            max-width: 600px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+
+                font-size: 200px;
+                font-weight: 700;
+                color: #e3c37f;
+                filter: drop-shadow(10px 10px 0px rgba(227, 195, 127, 0.5));
+
+            }
+
+        }
+
+    }
+
+} 
+
+.presentation {
+
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.experience {
+
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    .experience_wrapper {
+
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    
+    }
+
+}
+
+.extras {
+
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .extras_wrapper {
+
+        width: 100%;
+        height: 50px;
+        display: flex;
+        gap: 10px;
+
+        button {
+
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            border: 3px solid #222222;
+            background-color: rgba(34, 34, 34, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            i {
+
+                color: #ffffff;
+                font-size: 28px;
+
+            }
+
+        }
+
+        button:hover {
+
+            background-color: rgba(34, 34, 34, 0.7);
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .icon { display: none !important; }
+
+}

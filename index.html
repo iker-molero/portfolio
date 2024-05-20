@@ -10,6 +10,7 @@
 
     <!--? [ CSS REFERENCES ] -->
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/about_me.css">
 
 </head>
 <body ng-app="portfolio" ng-controller="portfolio_controller">
@@ -20,11 +21,7 @@
         <div class="light" ng-style="{ 'left': (5 + (70 * selected_state_index)) + 'px' }"></div>
 
         <div class="icon_wrapper" ng-repeat="state in states" ng-click="change_state(state.name)">
-            <i class="fa" ng-class="state.icon" ng-style="selected_state_index == $index ? { 'color': '#FF5D01', 'font-size': '38px' } : {}"></i>
-        </div>
-
-        <div class="icon_wrapper">
-            <i class="fa-brands fa-github"></i>
+            <i class="fa" ng-class="state.icon" ng-style="selected_state_index == $index ? { 'color': '#e3c37f', 'font-size': '38px' } : {}"></i>
         </div>
 
     </div>
