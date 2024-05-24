@@ -9,6 +9,9 @@ portfolio_controller = function($scope, $state, $transitions) {
     //* Save the selected state index
     $scope.selected_state_index = 0;
 
+    //* Get the projects for the projects section
+    $scope.projects = projects;
+
     //? [ FUNCTIONS ]
     //* When a state is changed, update the selected state index
     $transitions.onSuccess({}, function() {

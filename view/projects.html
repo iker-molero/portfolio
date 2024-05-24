@@ -11,9 +11,9 @@
                     <img src="../icons/css.svg">
                 </div>
                 <div class="stack_icon js">
-                    <img src="../icons/javascript.svg">
+                    <img src="../icons/js.svg">
                 </div>
-                <div class="stack_icon angular">
+                <div class="stack_icon angularjs">
                     <img src="../icons/angularjs.svg">
                 </div>
             </div>
@@ -48,6 +48,9 @@
                 </div>
             </div>
         </div>
-        <div class="list"></div>
+        <div class="list">
+            <h1>Projects</h1>
+            <project-card ng-repeat="project in projects" project="project"></project-card>
+        </div>
     </div>
 </div>

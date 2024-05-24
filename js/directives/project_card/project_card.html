@@ -1,0 +1,12 @@
+<div class="title_wrapper">
+    <h2>{{ name }}</h2>
+    <i class="fa fa-link" ng-click="redirect()"></i>
+</div>
+<div class="description_wrapper">
+    <p>{{ description }}</p>
+</div>
+<div class="stack_wrapper">
+    <div ng-repeat="tech in stack" class="stack_icon" ng-class="tech">
+        <img src="../icons/{{ tech }}.svg">
+    </div>
+</div>
