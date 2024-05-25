@@ -1,19 +1,19 @@
-app.directive("projectCard", function() {
+app.directive("jobCard", function() {
 
     return {
 
         "restrict": "E",
-        "templateUrl": "../js/directives/project_card/project_card.html",
-        "scope": { project: "=" },
+        "templateUrl": "../js/directives/job_card/job_card.html",
+        "scope": { job: "=" },
         "link": function(scope, elem, attr) {
 
             //* Get all the variables from the project obj
-            const { name, link, description, stack, img_url } = scope.project;
-            scope.name = name;
+            const { position, company, link, start, end, description, img_url } = scope.job;
+            scope.position = position;
+            scope.company = company;
+            scope.start = start;
+            scope.end = end;
             scope.description = description;
-            scope.stack = stack;
-
-            console.log(stack);
 
             //* Assign the background image to the element
             elem.css('backgroundImage', `url(${img_url})`);

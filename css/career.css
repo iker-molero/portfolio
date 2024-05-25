@@ -1,0 +1,39 @@
+.career_wrapper {
+
+    width: calc(100vw - 40px);
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    .career {
+
+        width: 1200px;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        gap: 50px;
+
+        .list {
+
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 50px;
+
+            h1 {
+
+                width: 100%;
+                text-align: left;
+
+            }
+
+        }
+
+    }
+
+}

@@ -9,7 +9,7 @@ const projects = [
             of any provider network on a single screen.
         `,
         "stack": ["html", "css", "js", "angularjs", "nodejs", "python", "sqlite"],
-        "img_url": "../img/leo_nms_background.png"
+        "img_url": "../img/projects/leo_nms_background.png"
     },
     {
         "name": "BestPath",
@@ -20,7 +20,7 @@ const projects = [
             selection for dynamic networks.
         `,
         "stack": ["html", "css", "js", "angularjs"],
-        "img_url": "../img/bestpath_background.png"
+        "img_url": "../img/projects/bestpath_background.png"
     },
 
 ];

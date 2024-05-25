@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/about_me.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/career.css">
 
     <!--? [ CSS DIRECTIVES ] -->
     <link rel="stylesheet" href="js/directives/project_card/project_card.css">
+    <link rel="stylesheet" href="js/directives/job_card/job_card.css">
 
 </head>
 <body ng-app="portfolio" ng-controller="portfolio_controller">
@@ -31,7 +33,7 @@
 
     </div>
 
-    <div ui-view></div>
+    <div class="view" ui-view></div>
 
 </body>
 </html>
@@ -47,6 +49,8 @@
 
 <!--? [ JS JSONS ] -->
 <script src="js/json/projects.js"></script>
+<script src="js/json/jobs.js"></script>
 
 <!--? [ JS DIRECTIVES ] -->
 <script src="js/directives/project_card/project_card.js"></script>
+<script src="js/directives/job_card/job_card.js"></script>

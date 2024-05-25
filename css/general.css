@@ -47,6 +47,7 @@ body {
         }
 
     }
+
     .icon_wrapper:hover {
 
         cursor: pointer;
@@ -70,6 +71,8 @@ body {
     }
 
 }
+
+.view { overflow-y: scroll; }
 
 p {
 

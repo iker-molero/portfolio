@@ -9,7 +9,7 @@
     .about_me {
 
         width: 1200px;
-        height: 400px;
+        height: fit-content;
         display: flex;
         justify-content: center;
 
@@ -17,7 +17,7 @@
 
             flex-grow: 1;
             max-width: 600px;
-            height: 400px;
+            height: fit-content;
             padding: 0px 20px;
             display: flex;
             flex-direction: column;
