@@ -19,7 +19,7 @@ app.directive("projectCard", function() {
             elem.css('backgroundImage', `url(${img_url})`);
 
             //* Create the link to the product page
-            scope.redirect = function() { window.open(link, '_blank')};
+            scope.redirect = function() { window.open(link, '_blank') };
 
         }
 

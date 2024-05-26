@@ -19,10 +19,17 @@
             <div class="extras">
                 <p>Others ways to find me:</p>
                 <div class="extras_wrapper">
-                    <button>
+                    <button ng-click="redirect('https://github.com/iker-molero')">
                         <i class="fa-brands fa-github"></i>
                     </button>
+                    <button ng-click="redirect('https://www.linkedin.com/in/iker-muñoz-molero')">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </button>
+                    <button ng-click="mail_copy()">
+                        <i class="fa fa-envelope"></i>
+                    </button>
                 </div>
+                <s ng-style="copy_flag == true  ? { 'opacity': '1' } : { 'opacity': '0' }">Mail copied to clipboard</s>
             </div>
         </div>
         <div class="icon">

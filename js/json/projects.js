@@ -22,5 +22,16 @@ const projects = [
         "stack": ["html", "css", "js", "angularjs"],
         "img_url": "../img/projects/bestpath_background.png"
     },
+    {
+        "name": "BestPath",
+        "link": "https://www.integrasys-space.com/bestpath",
+        "description": `
+            BestPath is a multi-orbit selector for single or multi-orbit
+            networks automating deployment, orchestration and back ups
+            selection for dynamic networks.
+        `,
+        "stack": ["html", "css", "js", "angularjs"],
+        "img_url": "../img/projects/bestpath_background.png"
+    },
 
 ];

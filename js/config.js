@@ -22,13 +22,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
             "icon": "fa-briefcase"
 
         })
-        .state ("contact_me", {
-
-            "url": "/contact_me",
-            "templateUrl": "../view/contact_me.html",
-            "icon": "fa-envelope"
-
-        });
 
     $urlRouterProvider.otherwise("/about_me");
 

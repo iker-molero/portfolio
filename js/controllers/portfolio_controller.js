@@ -9,6 +9,9 @@ portfolio_controller = function($scope, $state, $transitions) {
     //* Save the selected state index
     $scope.selected_state_index = 0;
 
+    //* Copy interval flag
+    $scope.copy_flag = false;
+
     //* Get the projects for the projects section
     $scope.projects = projects;
 
@@ -33,7 +36,32 @@ portfolio_controller = function($scope, $state, $transitions) {
         if ($state.current.name == state_name) return;
         $state.go(state_name);
 
-     };
+    };
+
+    //* Redirect to other sites
+    $scope.redirect = function(link) { window.open(link, '_blank') };
+
+    //* Copy mail to clipboard
+    $scope.mail_copy = function() {
+
+        navigator.clipboard.writeText("munoz.molero.iker@gmail.com");
+        $scope.set_copy_timeout();
+
+    };
+
+    //* Copy mail message interval
+    $scope.set_copy_timeout = function() {
+
+        $scope.copy_flag = true;
+
+        $scope.copy_timeout = setTimeout(() => {
+            
+            $scope.copy_flag = false;
+            $scope.$apply()
+
+        }, 3000);
+
+    };
 
 };
 

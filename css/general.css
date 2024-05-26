@@ -82,6 +82,17 @@ p {
 
 }
 
+s {
+
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0px;
+    text-decoration: none;
+    color: #7fe37f;
+    transition: 2s opacity;
+
+}
+
 h1 {
 
     font-size: 36px;
@@ -90,3 +101,6 @@ h1 {
     margin: 0px;
 
 }
+
+::-webkit-scrollbar { background-color: #000000; }
+::-webkit-scrollbar-track { background-color: #000000; }
