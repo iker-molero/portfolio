@@ -12,7 +12,7 @@ const jobs = [
             and programming best practices. I also gained valuable experience collaborating with diverse global
             clients, including those from Alaska, Australia, and the UK.
         `,
-        "img_url": "./img/companies/integrasys.png"
+        "img_url": "img/companies/integrasys.png"
     },
     {
         "position": "Intern",
@@ -25,7 +25,7 @@ const jobs = [
             an innovative project that won the MSUA Satellite Innovation Award in 2024. Additionally,
             I assisted in the creation of various auxiliary web-based management tools.
         `,
-        "img_url": "./img/companies/integrasys.png"
+        "img_url": "img/companies/integrasys.png"
     },
 
 ];

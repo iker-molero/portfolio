@@ -3,7 +3,7 @@ app.directive("jobCard", function() {
     return {
 
         "restrict": "E",
-        "templateUrl": "./js/directives/job_card/job_card.html",
+        "templateUrl": "js/directives/job_card/job_card.html",
         "scope": { job: "=" },
         "link": function(scope, elem, attr) {
 
