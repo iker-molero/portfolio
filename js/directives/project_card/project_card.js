@@ -3,7 +3,7 @@ app.directive("projectCard", function() {
     return {
 
         "restrict": "E",
-        "templateUrl": "../js/directives/project_card/project_card.html",
+        "templateUrl": "./js/directives/project_card/project_card.html",
         "scope": { project: "=" },
         "link": function(scope, elem, attr) {
 
