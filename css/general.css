@@ -1,7 +1,7 @@
 @font-face {
 
     font-family: Inter;
-    src: url(./fonts/Inter.ttf);
+    src: url(../fonts/Inter.ttf);
 
 }
 
@@ -102,5 +102,5 @@ h1 {
 
 }
 
-::-webkit-scrollbar { background-color: #000000; }
+::-webkit-scrollbar-track { background-color: #000000; }
 ::-webkit-scrollbar-track { background-color: #000000; }
